@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  body {
+    font-family: Inter, sans-serif;
+    background-color: hsl(233,47%, 7%);
+    font-size: 15px;
+  }
+  h1, h2 {
+    color:hsl(0, 0%, 100%);
+    /* border:1px solid black; */
+  }
+  div {
+    /* border:2px solid red; */
+  }
+  p {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family:Lexend Deca, sans-serif;
+    /* border:1px solid black; */
+  }
+  .stats span {
+    color:hsla(0, 0%, 100%, 0.6);
+    /* border:1px solid black; */
+  }
+  .flex-container.one {
+    background-color:hsl(244, 38%, 16%);
+  }
+  .flex-container.one>* {
+    padding: 3em;
+  }
+  .flex-container.one>*>* {
+    /* padding: 3em; */
+    /* margin:2em 0; */
+  }
+  .txt>* {
+    margin:1em 0;
+  }
+  .accent {
+    color:hsl(277, 64%, 61%);
+  }
+  .flex-container-max {
+    display:flex;
+    max-width:1080px;
+    border-radius: 10px;
+    overflow: hidden;
+    position:absolute;
+    top:25%;
+    left:25%;
+  }
+  .flex-container-max>* {
+    flex:0 0 50%;
+  }
+  .flex-container.two {
+    background-color:hsl(277, 64%, 61%);
+  }
+  .flex-container.two>img {
+    /* opacity:0.5; */
+  }
+  div.stats {
+    display:flex;
+  }
+  div.stats>* {
+    flex:0 1 100%;
+  }
+  div.stats * {
+    margin:0;
+  }
+  div.stats span {
+    text-transform: uppercase;
+  }
+  @media (max-width:380px) {
+    .flex-container-max {
+      flex-direction:column-reverse;
+      max-width:100%;
+      position:initial;
+    }
+    .flex-container-max>* {
+      justify-content:column;
+      align-items:center;
+    }
+    div.stats {
+      flex-flow:column;
+    }
+  }
+    </style>
+</head>
+<body>
+<div class="flex-container-max">
+<div class="flex-container one">
+  <div class="txt">
+    <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
+
+    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+    experience, and overall efficiency.</p>
+  </div>
+  <div class="stats">
+    <div><h2>10k+</h2> <span>companies</span></div>
+    <div><h2>314</h2> <span>templates</span></div>
+    <div><h2>12M+</h2> <span>queries</span></div>
+  </div>
+</div>
+<div class="flex-container two"><img src="images/image-header-desktop.jpg" alt=""></div>
+</div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
